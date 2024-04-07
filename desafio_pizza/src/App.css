@@ -1,0 +1,308 @@
+#root {
+    margin: 0;
+    text-align: center;
+}
+
+/* Nav */
+.navigation {
+    height: 3rem;
+    background-color: aqua;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0rem 3rem;
+}
+
+.active,
+.inactive {
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 1rem;
+}
+.active {
+    color: white;
+    font-weight: 500;
+}
+.inactive {
+    color: white;
+}
+
+/* Home */
+header {
+    color: white;
+    background-image: url(./assets/img/pizza_photo.jpg);
+    height: 15rem;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Footer */
+footer {
+    height: 2.5rem;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+/* Pizza Gallery */
+.pizzaGallery {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-around;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+
+
+.cardGallery {
+    width: 22rem;
+}
+
+
+
+.cardGalleryTitle {
+    font-size: 25px;
+    color: black;
+}
+
+.cardGalleryIngTitle {
+    font-size: 18px;
+    font-weight: bold;
+    color:black;
+}
+
+.cardGalleryIng {
+    text-align: start;
+    padding: 0rem 5rem;
+    font-size: 16px;
+    list-style-type: none;
+}
+
+.cardGalleryPrice {
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+
+.cardButtons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+.cardButton {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 2rem;
+    border: none;
+    border-radius: 1rem;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.details {
+    background-color: skyblue;
+    width: 5rem;
+}
+.add {
+    background-color: red;
+    width: 7rem;
+}
+
+/* Pizza detail */
+.pizzaDetail {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.cardDetail {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+ 
+}
+
+.cardDetailImg {
+    border-radius: 0.6rem;
+    width: 28rem;
+    height: 28rem;
+    object-fit: cover;
+}
+
+.cardDetails {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    padding-left: 1rem;
+}
+
+.cardDetails p {
+    font-size: 16px;
+}
+
+.cardDetails h4 {
+    margin: 1rem 0rem;
+    color: black;
+}
+
+.cardDetails h2 {
+    color: black
+}
+
+.cardDetailsIng {
+    list-style-type: none;
+}
+
+.cardDetailFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.addDetail {
+    background-color: red;
+    width: 7rem;
+}
+
+
+.backHome{
+    width: 8rem;
+    background-color: rgb(47, 160, 76);
+}
+
+/* Cart */
+.cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.cart h3 {
+    padding: 2rem 0rem 2rem 0rem;
+    color: black;
+    
+}
+
+.cartDetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50rem;
+    margin-bottom: 1rem;
+}
+
+.cartImgName {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cartImgName p {
+    padding-top: 0.5rem;
+}
+
+.cartImg {
+    height: 3rem;
+    border-radius: 5%;
+    margin-right: 1rem;
+}
+
+.cartPriceQuantity {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cartPriceQuantity h5 {
+    color: black;
+    margin: 0rem 1rem;
+}
+
+.cartButton {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 2rem;
+    width: 2rem;
+    border: none;
+    border-radius: 25%;
+    font-weight: bold;
+}
+
+#my-tooltip-1 {
+    background-color: rgb(128, 3, 3);
+    font-weight: 400;
+}
+#my-tooltip-2 {
+    background-color: rgb(47, 160, 76);
+    font-weight: 400;
+}
+
+.decrement {
+    background-color: rgb(128, 3, 3);
+    color: white;
+}
+.increment {
+    background-color: rgb(47, 160, 76);
+}
+
+.cartTotalPrice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+}
+
+.cartTotalPrice span {
+    color: rgb(122, 22, 22);
+}
+
+.cartPayButton {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    height: 3rem;
+    width: 6rem;
+    border-radius: 0.5rem;
+    background-color: rgb(255, 157, 29);
+    font-weight: bold;
+}
+
+/* Not Found */
+.notFound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.notFoundImg {
+    margin: 2rem;
+}
